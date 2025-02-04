@@ -71,7 +71,7 @@ public class ChatController {
         return new RsData<>(
                 "S-1",
                 "메세지 리스트",
-                new messagesResponse(chatMessages, chatMessages.size())
+                new messagesResponse(messages, chatMessages.size())
         );
     }
 }
