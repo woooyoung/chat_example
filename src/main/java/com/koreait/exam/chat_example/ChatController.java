@@ -34,6 +34,11 @@ public class ChatController {
         );
     }
 
+    @GetMapping("/room")
+    public String showRoom(){
+        return "chat/room";
+    }
+
     public record messagesRequest(Long fromId) {
 
     }
